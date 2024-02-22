@@ -21,3 +21,11 @@ vim.keymap.set("n", "Q", "<nop>")
 
 vim.keymap.set("n", "<leader>f", function() vim.lsp.buf.format() end)
 vim.keymap.set("n", "<leader>s", ":w<CR>")
+
+-- vscode-like duplication
+vim.keymap.set("n", "<M-J>", "\"ayy\"ap")
+vim.keymap.set("v", "<M-J>", "\"ay'>p`[v`]") -- buggy; re-duplicates first char
+vim.keymap.set("i", "<M-J>", "<ESC> \"ayy\"api")
+vim.keymap.set("n", "<M-K>", "\"ayy\"aP")
+vim.keymap.set("v", "<M-K>", "\"ay'>P`]v`[") -- buggy; re-duplicates first char
+vim.keymap.set("i", "<M-K>", "<ESC> \"ayy\"aPi")

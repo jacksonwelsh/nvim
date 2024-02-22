@@ -29,3 +29,5 @@ vim.keymap.set("i", "<M-J>", "<ESC> \"ayy\"api")
 vim.keymap.set("n", "<M-K>", "\"ayy\"aP")
 vim.keymap.set("v", "<M-K>", "\"ay'>P`]v`[") -- buggy; re-duplicates first char
 vim.keymap.set("i", "<M-K>", "<ESC> \"ayy\"aPi")
+-- movement is handled by move.nvim
+

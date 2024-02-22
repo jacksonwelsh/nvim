@@ -1,5 +1,3 @@
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
-
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m 'M-2<CR>gv=gv")
 
@@ -22,4 +20,4 @@ vim.keymap.set("v", "<leader>d", "\"_d")
 vim.keymap.set("n", "Q", "<nop>")
 
 vim.keymap.set("n", "<leader>f", function() vim.lsp.buf.format() end)
-
+vim.keymap.set("n", "<leader>s", ":w<CR>")

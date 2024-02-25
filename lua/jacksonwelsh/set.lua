@@ -27,4 +27,5 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "100"
-
+vim.g.python3_host_prog = "~/.config/nvim/venv/bin/python3"
+vim.g.loaded_perl_provider = 0

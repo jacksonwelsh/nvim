@@ -31,3 +31,5 @@ vim.keymap.set("v", "<M-K>", "\"ay'>P`]v`[") -- buggy; re-duplicates first char
 vim.keymap.set("i", "<M-K>", "<ESC> \"ayy\"aPi")
 -- movement is handled by move.nvim
 
+-- rename symbold
+vim.keymap.set("n", "<M-R>", function() vim.lsp.buf.rename() end)
